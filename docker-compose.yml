@@ -1,0 +1,11 @@
+version: "3.1"
+
+services:
+  baget:
+    build:
+      context: "."
+      dockerfile: Dockerfile
+    ports:
+      - 7777:8000
+    volumes:
+      - ./data/baget.db:/var/baget/baget.db
